@@ -5,10 +5,10 @@ public class ex_02{
 		Scanner BMI = new Scanner(System.in);
 		
 		System.out.println("What is your height (in inches)?");
-		double height = BMI.nextInt();
+		double height = BMI.nextDouble();
 		
 		System.out.println("What is your weight (in pounds)?");
-		double weight = BMI.nextInt();
+		double weight = BMI.nextDouble();
 		
 		double BMIResults = weight*703/(height*height);
 		
