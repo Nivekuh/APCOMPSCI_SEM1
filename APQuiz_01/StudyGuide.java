@@ -48,5 +48,13 @@ public class StudyGuide{
 		Since the gpa he calculates comes out to be a decimal less than 1, because it's an integer, it just cuts off the decimal and adopts the value of 0.
 		You can fiz this by using doubles instead of ints.
 		*/
+		
+		int a = 23;
+		int b = 41;
+		int c = 57;
+		
+		double d = (a+b+c)/4;
+		
+		System.out.println(d);
 	}
 }
