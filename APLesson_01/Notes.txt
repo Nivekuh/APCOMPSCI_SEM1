@@ -1,3 +1,0 @@
-Java is cool.
-System.out.println --> Prints to console
-f6 for cool things.
