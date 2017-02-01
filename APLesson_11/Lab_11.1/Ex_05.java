@@ -25,6 +25,8 @@ public class Ex_05{
 			System.out.println("\n");
 			printClip();
 		}
+		
+		System.out.println("You are out of bullets");
 	}
 	
 	public static void printClip(){
