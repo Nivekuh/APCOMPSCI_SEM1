@@ -1,0 +1,31 @@
+Q_01: What is the relationship between class Rumba and class Mambo?
+	A: E. There is no class relationship between Rumba and Mambo.
+	Mambo doesn't extend Rumba or anything, and there's no relationship between them.
+
+Q_02: Which of the following can be used to replace the /* missing code */ in constructor Mambo so that the desired output is achieved?
+	A: C. III only
+	Use super() to run the Rumba constructor, then run the Mambo-specific code.
+	
+Q_03: An Equestrian object is a CircusPerformer who rides ponies over the obstacles. Which of the following methods must be defined in the Equestrian class?
+	A: A. I only
+	You only need to define the constructor for the Equestrian class. The rest of the methods it inherits from the CircusPerformer class.
+	
+Q_04: Which of the following implementations can be used to replace /* missing code */. In constructor Equestrian so that the CircusPerformer instance variables are properly initialized?
+	A: B. II only
+	Option I doesn't work because performername and actName are private instance variables, and it's kinda dumb. Option III uses variables that haven't been defined, so that's not good either.
+	
+Q_05: What is printed as a result of executing the code segment?
+	A: D. Compile error message indicating that there is a progblem [sic] with the constructor.
+	No constructor for TightRopeWalker, which is the one that gets called. No good. :(
+	
+Q_06: What is printed as a result of executing the code segment?
+	A: A. Starts from tight rope platform Walks and flips on the tight rope Exits from tight rope platform
+	The new methods in the TightRopeWalker class override the original entrance, performance, and exit methods.
+	
+Q_07: What is printed as a result of executing the code segment?
+	A: A. Starts from tight rope platform Walks and flips on the tight rope Exits from tight rope platform
+	Inherits the methods from the TightRopeWalker class, which overrode the CircusPerformer class.
+	
+Q_08: What is printed as a result of executing the code segment?
+	A: C: Starts from tight rope platform Juggles wile walking and flipping a tight rope Exits from tight rope platform
+	Only the performance method is overriden, the other ones are inherited from the TightRopeWalker class.
