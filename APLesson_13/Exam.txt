@@ -5,10 +5,14 @@ Q_01: What is the relationship between class Rumba and class Mambo?
 Q_02: Which of the following can be used to replace the /* missing code */ in constructor Mambo so that the desired output is achieved?
 	A: C. III only
 	Use super() to run the Rumba constructor, then run the Mambo-specific code.
+		Correct Answer: E
+		I should learn to program better.
 	
 Q_03: An Equestrian object is a CircusPerformer who rides ponies over the obstacles. Which of the following methods must be defined in the Equestrian class?
 	A: A. I only
 	You only need to define the constructor for the Equestrian class. The rest of the methods it inherits from the CircusPerformer class.
+		Correct Answer: E
+		E for Evil Equestrians. Who says the horse can't run in circles?
 	
 Q_04: Which of the following implementations can be used to replace /* missing code */. In constructor Equestrian so that the CircusPerformer instance variables are properly initialized?
 	A: B. II only
@@ -29,3 +33,63 @@ Q_07: What is printed as a result of executing the code segment?
 Q_08: What is printed as a result of executing the code segment?
 	A: C: Starts from tight rope platform Juggles wile walking and flipping a tight rope Exits from tight rope platform
 	Only the performance method is overriden, the other ones are inherited from the TightRopeWalker class.
+	
+Q_09: Which of the following are true statements about the Aardvark class?
+	A: B. II only
+	Aardvark is a subclass of Animal, so it inherits the methods.
+	
+Q_10: What are the first 2 lines of output?
+	A: A. Person Constructor Student Constructor
+	Student constructor automatically calls the superclass constructor.
+	
+Q_11: What are the last 2 lines of output?
+	A: A. Student’s Grade is 12 Student’s Age is 17
+	Age gets initialized in the person constructor.
+	
+Q_12: What are the last 2 lines of output?
+	A: D. Student’s Age is 25 Student’s Grade is 12
+	This guy is really old to be a senior.
+	
+Q_13: Of the methods shown, how many different non-constructor methods can be invoked by a FinanceCar object?
+	A: D. 4
+	I hope I remembered how to count correctly.
+	
+Q_14: Which of the following correctly implements the default constructor of the CreditCard class?
+	A: D. III only
+	Can't do I since the variables are private. Can't do II since p and r aren't defined.
+	
+Q_15: Which is a correct implementation of the constructor with parameters in the FinanceCar class?
+	A: C. super(p, r); value = v;
+	The other ways don't work correctly.
+	
+Q_16: Which is a correct implementation of the CreditCard constructor?
+	A: B. super(p, r);
+	I'm going to assume they mean the constructor with parameters, and not the default one.
+	
+Q_17: Which is the correct implementation of the code for the needGap() method in the FinanceCar class?
+	A: E. if(super.amountOwed() > value){    super.Fees(GAP);}
+	Gotta use super.amountOwed() to get the value of total, and super.Fees() to set the value.
+	
+Q_18: Which method call will cause an error?
+	A: C. fC.Fees(GAP);
+	GAP isn't a thing for fC.
+	
+Q_19: Which of the following from our Loan, CreditCard, and FinanceCar classes is an example of polymorphism?
+	A: D. The constructors
+	I don't really remember the definition of Polymorphism, so I'll just put this answer.
+	
+Q_20: The constructor in FinanceCar contains a call to super() with the parameters p and rate. When Java decides to use Loan’s constructor with parameters at compile time, this is an example of...
+	A: C. Downcasting
+	Look at explanation for Q_19. It just sounds cool.
+		Correct Answer: E
+		I need to study my words.
+	
+Q_21: There are 2 calls to Fees() above - one in the Loan object ln and one inside of the needGap() method called in the FinanceCar object fC. Java decides which implementation of the needGap() method to use at run time. This is an example of…
+	A: D. Dynamic binding
+	Please stop with the vocabulary.
+
+Q_22: Which of the above will cause a ClassCastException?
+	A: A. ((Loan)c).needGap();
+	Pretty sure that doesn't exist for Loans.
+		Correct Answer: C
+		Wow I'm dumb.
