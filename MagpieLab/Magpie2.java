@@ -82,7 +82,7 @@ public class Magpie2
 		String phrase = " " + statement.trim().toLowerCase() + " ";
 		int psn = phrase.indexOf(goal, startPos);
 		
-		if(psn != -1 && (isLetter(phrase.substring(psn - 1, psn)) || isLetter(phrase.substring(psn + goal.length(), psn + goal.length() + 1))))
+		if(psn > -1 && (isLetter(phrase.substring(psn - 1, psn)) || isLetter(phrase.substring(psn + goal.length(), psn + goal.length() + 1))))
 			return findKeyword(statement, goal, psn + 1);
 		
 		return psn - 1;
@@ -122,7 +122,7 @@ public class Magpie2
 		ArrayList<String> punctuation = new ArrayList<String>(Arrays.asList(new String[]{".", "?", "!"}));
 		
 		String phrase = statement.trim();
-		if(punctuation.indexOf(phrase.substring(phrase.length() - 1, phrase.length())) != -1)
+		if(punctuation.indexOf(phrase.substring(phrase.length() - 1, phrase.length())) ==  phrase.length() - 1)
 			phrase = phrase.substring(0, phrase.length() - 1);
 		
 		int psn_1 = findKeyword(phrase, params[0]);
