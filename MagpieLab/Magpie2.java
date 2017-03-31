@@ -52,6 +52,11 @@ public class Magpie2
 		{
 			response = "He sounds like a pretty dank teacher.";
 		}
+		
+		else if (findKeyword(statement, "i like", 0) >= 0)
+		{
+			response = transformIYouStatement(statement);
+		}
 
 		else
 		{
@@ -128,7 +133,7 @@ public class Magpie2
 		int psn_1 = findKeyword(phrase, params[0]);
 		int psn_2 = params[1] != null ? findKeyword(phrase, params[1]) : phrase.length();
 		
-		return phrase.substring(psn_1 + params[0].length(), psn_2);
+		return phrase.substring(psn_1 + params[0].length(), psn_2).replace("you", "me");
 	}
 	
 	private String transformIWantToStatement(String statement){
@@ -142,8 +147,16 @@ public class Magpie2
 	private String transformYouMeStatement(String statement){
 		String rm = getStringForParameters(statement, new String[]{"you", "me"});
 		if(rm.trim().length() > 0)
-			return "What makes you think that I " + rm + "you?";
+			return "What makes you think that I" + rm + "you?";
 		else
 			return getRandomResponse();		
+	}
+	
+	private String transformIYouStatement(String statement){
+		String rm = getStringForParameters(statement, new String[]{"i like", null});
+		if(rm.trim().length() > 0)
+			return "Why do you like" + rm + "?";
+		else
+			return getRandomResponse();
 	}
 }
