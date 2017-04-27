@@ -1,0 +1,10 @@
+A2:
+1. Deck contains a list of Cards
+2. 6 Cards
+3. Ranks = {"ace", "king", "queen",..."two"}; Suits = {"Spades", "Hearts", "Diamonds", "Clubs"}; Values = {11, 10, 10,...2};
+4. Yes. The rank in the nth place of the array correlates to the nth value in the value array.
+
+A3:
+1. Look at shuffler.java
+2. Look at shuffler.java
+3. 0, 1, 1, 0

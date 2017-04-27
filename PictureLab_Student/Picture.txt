@@ -1,0 +1,33 @@
+A1:
+1. 8 bits, or 1 byte, since 100000000 is 256 in base 2
+2. 3 bytes, one for each component of the rgb color
+3. 307200 pixels
+
+A2:
+1. Pink is Red + Blue + a bit less Green
+2. Yellow is Red + Green
+3. Purple is a bit of Blue + a bit of Red
+4. White is everything
+5. Dark grey is a bit of everything
+
+A3:
+1. Top Row index: 0
+2. Left Column index: 0
+3. Right Column index: 640
+4. Botton Row Index: 480
+5. Top to Bottom
+6. Left to Right
+7. Yes
+
+A5:
+1. No :(
+2. Yes, and Yes :)
+3. No, since DigitalPicture is abstract
+4. Yes
+5. Yes
+6. Yes
+7. No :(
+
+A7:
+1. Runs 10*9 times = 90
+2. Runs 7*16 times = 112
